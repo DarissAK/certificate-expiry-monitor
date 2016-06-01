@@ -12,7 +12,7 @@
 // GNU Affero General Public License for more details.
 
 // You should have received a copy of the GNU Affero General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 error_reporting(E_ALL & ~E_NOTICE);
@@ -20,7 +20,7 @@ ob_start();
 $write_cache = 0;
 
 foreach (glob("functions/*.php") as $filename) {
-  require($filename);
+    require($filename);
 }
 
 require('inc/header.php');

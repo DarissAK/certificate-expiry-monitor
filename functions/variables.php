@@ -12,9 +12,9 @@
 // GNU Affero General Public License for more details.
 
 // You should have received a copy of the GNU Affero General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-$version = 1.2;
+$version = 1.21;
 $title = "Certificate Expiry Monitor";
 
 $current_folder = get_current_folder();
@@ -24,16 +24,16 @@ $timeout = 2;
 
 date_default_timezone_set('UTC');
 
-ini_set('default_socket_timeout', 2);
+ini_set('default_socket_timeout', 5);
 
-$random_blurp = rand(1000,99999);
+$random_blurp = rand(1000, 99999);
 
-$current_domain = "certificatemonitor.org";
+$current_domain = "certmonitor.example.com";
 
 // set this to a location outside of your webroot so that it cannot be accessed via the internets.
 
-$pre_check_file = '/home/certmon/domains/certificatemonitor.org/cert-monitor/pre_checks.json';
-$check_file = '/home/certmon/domains/certificatemonitor.org/cert-monitor/checks.json';
-$deleted_check_file = '/home/certmon/domains/certificatemonitor.org/cert-monitor/deleted_checks.json';
+$pre_check_file = '/var/www/html/cert-db/pre_checks.json';
+$check_file = '/var/www/html/cert-db/checks.json';
+$deleted_check_file = '/var/www/html/cert-db/deleted_checks.json';
 
 ?>
