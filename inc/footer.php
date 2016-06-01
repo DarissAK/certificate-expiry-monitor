@@ -24,7 +24,7 @@
                         href="https://cipherli.st/">Strong SSL Ciphers & Config settings @ Cipherli.st</a></strong>.
                 Version: <?php echo $version; ?></p>
             <p class="text-muted">Forked and modified by <a href="https://github.com/DarissAK">DarissAK</a>. <a
-                    href="https://github.com/RaymiiOrg/certificate-expiry-monitor">Forked source code</a></p>
+                    href="https://github.com/DarissAK/certificate-expiry-monitor">Forked source code</a></p>
         </div>
     </div>
 </div>
